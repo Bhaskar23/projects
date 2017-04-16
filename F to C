@@ -1,0 +1,11 @@
+#include<stdio.h>
+main( ) 
+{
+	int fahr,celsius;
+	printf("\t \t CONVERSION");
+	printf("\n Fahrenhiet=");
+	scanf("%d",&fahr);
+	celsius=5*(fahr-32)/9;
+	printf("\n Celsius=%d",celsius);
+}
+	
