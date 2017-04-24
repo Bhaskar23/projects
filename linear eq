@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<conio.h>
+int main( )
+{
+	float a,b,c,p,q,r,x,y;
+	printf("Enter the coefficients of a,b,c:");
+	scanf("%f%f%f",&a,&b,&c);
+	printf("\n Enter the coefficient of p,q,r:");
+	scanf("%f%f%f",&p,&q,&r);
+	if(((a*q-p*b)!=0)&&(b*p-q*a)!=0)
+	{
+		printf("\n The solution of the equation");
+		x=(c*q-r*b)/(a*q-p*b);
+		y=(c*p-r*a)/(b*p-q*a);
+		printf("\n The value of X=%f",x);
+		printf("\n The value of Y=%f",y);
+	}
+	else
+	if(((a*q-p*b)==0)&&((b*p-q*a)==0))
+	printf(" \n No solutions are possible");
+	getch( );
+}
